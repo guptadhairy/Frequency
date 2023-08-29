@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequency Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li>
+        <h3 class="navbar2">Online Frequency Generator </h3>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h2 class="heading">Enter the value of frequency</h2>
+    <input class="textbox" type="text" id="fIn" min="125" max="1250" oninput="show()" />
+    <span id="fOut"></span><br>
+
+    <h2 class="text1">Choose the type of frequency</h2>
+    <input class="text1" type="range" id="tIn" min="0" max="3" oninput="show()" />
+    <span id="tOut"></span><br>
+    <h2 class="text1">Choose the volume</h2>
+    <input class="text1" type="range" id="vIn" min="0" max="100" oninput="show()" />
+    <span id="vOut"></span><br>
+    <h2 class="text1">Enter the duration of the frequency</h2>
+    <input class="textbox" type="text" id="dIn" min="1" max="500000" oninput="show()" />
+    <span id="dOut"></span>
+    <br>
+    <button class="playbtn" onclick='beep();'>Play</button>
+    <!-- <button class="stopbtn" id="stopBtn">Stop</button> -->
+  </div>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
+<!-- 6388415537 -->
